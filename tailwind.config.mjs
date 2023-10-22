@@ -19,6 +19,9 @@ export default {
 			fontFamily: {
 				'sans': ['"Montserrat"', ...defaultTheme.fontFamily.sans],
 			},
+			backgroundImage: {
+				"hero-pattern": "url('/src/assets/herobg.png')",
+			  },
 		},
 	},
 	plugins: [],

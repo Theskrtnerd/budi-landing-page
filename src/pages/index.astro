@@ -1,10 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.jsx";
 ---
 
 <Layout title="Main page">
-	<div class="bg-red-800 p-4">Hello World!</div>
-	<Footer/>
+  <div class="bg-red-800 p-4">Hello World!</div>
+  <div class="bg-hero-pattern bg-cover bg-no-repear bg-center">
+    <Hero />
+  </div>
+
+  <Footer />
 </Layout>
