@@ -3,14 +3,13 @@ interface Props {
 	title: string;
 	body: string;
 	img_href: string;
-	type: boolean;
 }
 
-const { title, body, img_href, type } = Astro.props;
+const { title, body, img_href } = Astro.props;
 ---
 
-<div class=`shadow-2xl ${type ? "bg-pri-80": "bg-white"} w-[30%] h-96 pt-20 pb-12 px-10 flex flex-col rounded-[32px] justify-between items-center`>
+<div class=`transition hover:-translate-y-1 shadow-2xl bg-white group hover:bg-pri-80 w-[30%] h-96 pt-20 pb-12 px-10 flex flex-col rounded-[32px] justify-between items-center`>
 	<img class="h-20" src={img_href}>
-	<div class=`${type ? "text-sec-80": "text-pri-80"} font-semibold text-2xl flex justify-center`>{title}</div>
-	<div class=`${type ? "text-white": "text-gray-500"} text-base flex text-center`>{body}</div>
+	<div class=`group-hover:text-sec-80 text-pri-80 font-semibold text-2xl flex justify-center`>{title}</div>
+	<div class=`group-hover:text-white text-gray-500 text-base flex text-center`>{body}</div>
 </div>
