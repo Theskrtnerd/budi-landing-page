@@ -12,11 +12,21 @@
   "dependencies": {
     "@astrojs/react": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
+    "@react-three/drei": "^9.88.4",
+    "@react-three/fiber": "^8.15.2",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
     "astro": "^3.3.2",
+    "framer-motion": "^10.16.4",
+    "maath": "^0.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.3"
+    "react-router-dom": "^6.17.0",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "tailwindcss": "^3.3.3",
+    "three": "^0.156.1",
+    "postcss": "^8.4.29"
+
   }
 }
