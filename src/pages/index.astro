@@ -1,18 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer.astro';
-import Navbar from '../components/Navbar.astro';
-import Cards from '../components/Cards.astro';
-import UserCount from '../components/UserCount.astro';
-import Hero from '../components/Hero.jsx';
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Cards from "../components/Cards.astro";
+import UserCount from "../components/UserCount.astro";
+import Hero from "../components/Hero.jsx";
 ---
 
 <Layout title="Main page">
-	<Navbar/>
-	<div class="bg-hero-pattern bg-cover bg-no-repear bg-center">
-		<Hero/>
-	</div>
-	<Cards/>
-	<UserCount/>
-	<Footer/>
+  <Navbar />
+  <div class="bg-cover bg-no-repear bg-center">
+    <Hero />
+  </div>
+  <Cards />
+  <UserCount />
+  <Footer />
 </Layout>
