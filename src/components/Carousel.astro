@@ -1,0 +1,66 @@
+---
+
+---
+
+<div class="carousel">
+  <div class="carousel-inner">
+    <!-- Add your carousel items here -->
+    <div class="carousel-item">
+      <img src="image1.jpg" alt="Image 1" />
+    </div>
+    <div class="carousel-item">
+      <img src="image2.jpg" alt="Image 2" />
+    </div>
+    <div class="carousel-item">
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+  </div>
+  <button class="prev-button" on:click={prevSlide}>Previous</button>
+  <button class="next-button" on:click={nextSlide}>Next</button>
+</div>
+
+<script>
+  let currentSlide = 0;
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + 3) % 3; // 3 is the number of slides
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % 3; // 3 is the number of slides
+  }
+</script>
+
+<style>
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .prev-button {
+    left: 10px;
+  }
+
+  .next-button {
+    right: 10px;
+  }
+</style>

@@ -13,6 +13,8 @@
   color-scheme: dark;
 }
 
+
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -126,6 +128,7 @@
   transform: translateZ(0);
 }
 
+
 @keyframes mulShdSpin {
   0%,
   100% {
@@ -201,4 +204,125 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+  
+}
+
+/* button */
+
+.button-up,
+.button-down {
+  position: relative;
+  padding: 5px;
+  margin: 30px auto;
+  background: #000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.button-down:hover {
+  transform: translate3d(0, 10px, 0);
+}
+
+.button-up:hover {
+  transform: translate3d(0, -10px, 0);
+}
+
+.button-up::after,
+.button-down::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  z-index: 11;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.button-up::after {
+  top: 20px;
+  transform: rotate(45deg);
+}
+
+.button-down::after {
+  top: 10px;
+  transform: rotate(225deg);
+}
+
+.arrow-right,
+.arrow-left,
+.long-arrow-right,
+.long-arrow-left{
+  display: block;
+  margin: 30px auto;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+.arrow-right,
+.long-arrow-right{
+ transform: rotate(135deg);
+}
+
+.arrow-left,
+.long-arrow-left{
+ transform: rotate(-45deg);
+}
+.long-arrow-right::after,
+.long-arrow-left::after{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 45px;
+  background-color: black;
+  transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
+}
+
+.triangle-left,
+.triangle-right,
+.triangle-top,
+.triangle-bottom{
+  width: 0;
+  height: 0;
+  margin: 30px auto;
+}
+.triangle-left,
+.triangle-right{
+  border-top:
+    18px solid transparent;
+  border-bottom:
+    18px solid transparent;
+  
+  
+}
+.triangle-top,
+.triangle-bottom{
+  border-left:
+    18px solid transparent;
+  border-right:
+    18px solid transparent;
+  
+  
+}
+
+.triangle-right{
+  border-left:
+    30px solid black;
+}
+.triangle-left{
+  border-right:
+    30px solid black;
+}
+.triangle-top{
+  border-bottom:
+    30px solid black;
+}
+.triangle-bottom{
+  border-top:
+    30px solid black;
 }

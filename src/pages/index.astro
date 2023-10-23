@@ -5,14 +5,18 @@ import Navbar from "../components/Navbar.astro";
 import Cards from "../components/Cards.astro";
 import UserCount from "../components/UserCount.astro";
 import Hero from "../components/Hero.jsx";
+import Slider from "../components/Testimonials.jsx";
+import { testimonial } from "../assets";
+import Carousel from "../components/Carousel.astro";
 ---
 
 <Layout title="Main page">
   <Navbar />
   <div class="bg-cover bg-no-repear bg-center">
-    <Hero />
+    <Hero client:load />
   </div>
   <Cards />
+  <Slider client:load />
   <UserCount />
   <Footer />
 </Layout>
