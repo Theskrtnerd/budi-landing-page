@@ -30,5 +30,8 @@
     "tailwindcss": "^3.3.3",
     "three": "^0.156.1",
     "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "astro-icon": "^0.8.1"
   }
 }
