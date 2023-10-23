@@ -7,7 +7,7 @@ import UserCount from "../components/UserCount.astro";
 import Hero from "../components/Hero.jsx";
 import Slider from "../components/Testimonials.jsx";
 import { testimonial } from "../assets";
-import Carousel from "../components/Carousel.astro";
+import Form from "../components/Form.jsx";
 ---
 
 <Layout title="Main page">
@@ -18,5 +18,6 @@ import Carousel from "../components/Carousel.astro";
   <Cards />
   <Slider client:load />
   <UserCount />
+  <Form />
   <Footer />
 </Layout>
