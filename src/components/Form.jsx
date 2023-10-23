@@ -26,7 +26,7 @@ function ContactForm() {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <form className="max-w-md w-full" onSubmit={handleSubmit}>
+      <form netlify className="max-w-md w-full" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 text-sm font-medium">
             Your Name:
