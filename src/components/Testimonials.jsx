@@ -78,21 +78,21 @@ const Slider = () => {
 
         <div className="mt-4 flex justify-center">
           <img
-            src="src/assets/tia.png" // Replace with your image source
+            src="tia.png" // Replace with your image source
             onClick={() => jumpToSlide(0)}
             className={`mx-20 cursor-pointer ${
               carouselIndex === 0 ? "" : "opacity-50"
             }`}
           />
           <img
-            src="src/assets/shaw.png" // Replace with your image source
+            src="shaw.png" // Replace with your image source
             onClick={() => jumpToSlide(1)}
             className={`mx-20 cursor-pointer ${
               carouselIndex === 1 ? "" : "opacity-50"
             }`}
           />
           <img
-            src="src/assets/nick.png" // Replace with your image source
+            src="nick.png" // Replace with your image source
             onClick={() => jumpToSlide(2)}
             className={`mx-20 cursor-pointer ${
               carouselIndex === 2 ? "" : "opacity-50"
