@@ -9,7 +9,7 @@ const styles = {
     "text-black tracking-widest font-light lg:text-[26px] sm:text-[22px] xs:text-[16px] text-[12px] lg:leading-[20px]",
 
   sectionHeadText:
-    "text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+    "text-black font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
 };

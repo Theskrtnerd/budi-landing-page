@@ -17,10 +17,11 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-black`}>Save <span className='text-pri-100'>Trees</span></h1>
         </div>        
       </div>
-
-      <div className="absolute w-full sm:w-[70%] h-screen sm:right-[1%]">
+      
+      {/* <div className="absolute w-full sm:w-[70%] h-screen sm:right-[1%]">
         <ComputersCanvas />
-      </div>
+      </div> */}
+      
       
       
     </section>
