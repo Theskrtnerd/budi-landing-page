@@ -13,15 +13,21 @@ import HowItWorks from "../components/HowItWorks.astro";
 ---
 
 <Layout title="Main page">
-  <Navbar />
-  <div class="bg-cover bg-no-repear bg-center">
-    <Hero client:load />
+  <div class="relative w-full">
+    <img src="blobs/blob1.png" class="absolute top-0 right-0" />
+    <img src="blobs/blob2.png" class="absolute top-0 left-0" />
+        <div class="relative w-full z-10">
+      <Navbar />
+      <div class="bg-cover bg-no-repeat bg-center">
+        <Hero client:load />
+      </div>
+      <HowItWorks />
+      <Slider client:only="react" />
+      <UserCount />
+      <Cards />
+      <FAQs />
+      <Form client:load />
+      <Footer />
+    </div>
   </div>
-  <HowItWorks />
-  <Slider client:only="react" />
-  <UserCount />
-  <Cards />
-  <FAQs />
-  <Form client:load />
-  <Footer />
 </Layout>
