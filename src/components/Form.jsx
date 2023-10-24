@@ -12,11 +12,13 @@ const encode = (data) => {
 };
 
 function ContactForm() {
-  const [form, setForm] = useState({
+  const initialFormState = {
     name: "",
     email: "",
     message: "",
-  });
+  };
+
+  const [form, setForm] = useState(initialFormState);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,7 +27,10 @@ function ContactForm() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...form }),
     })
-      .then(() => alert("Success!"))
+      .then(() => {
+        alert("Success!");
+        setForm(initialFormState); // Reset form values
+      })
       .catch((error) => alert(error));
   };
 
@@ -62,7 +67,7 @@ function ContactForm() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
-                className="w-[840px] bg-tertiary py-2 px-3 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="w-[840px] bg-tertiary py-2 px-3 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
               />
             </div>
             <div className="mb-2">
