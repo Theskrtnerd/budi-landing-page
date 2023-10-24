@@ -1,22 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const encode = (data) => {
   return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
 };
 
 function ContactForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...formData }),
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData }),
     })
-      .then(() => alert('Success!'))
+      .then(() => alert("Success!"))
       .catch((error) => alert(error));
   };
 
@@ -28,7 +32,10 @@ function ContactForm() {
     <div className="min-h-screen flex items-center justify-center">
       <form name="contact" data-netlify="true" className="max-w-md w-full" onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-gray-700 text-sm font-medium">
+          <label
+            htmlFor="name"
+            className="block text-gray-700 text-sm font-medium"
+          >
             Your Name:
           </label>
           <input
@@ -41,7 +48,10 @@ function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 text-sm font-medium">
+          <label
+            htmlFor="email"
+            className="block text-gray-700 text-sm font-medium"
+          >
             Your Email:
           </label>
           <input
@@ -54,7 +64,10 @@ function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="message" className="block text-gray-700 text-sm font-medium">
+          <label
+            htmlFor="message"
+            className="block text-gray-700 text-sm font-medium"
+          >
             Message:
           </label>
           <textarea
