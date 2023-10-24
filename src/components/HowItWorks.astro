@@ -1,80 +1,115 @@
 ---
----
-<div class="flex flex-col pt-28 gap-4">
-<div class="flex justify-end px-20 text-xl">How it works</div>
-<div class="pl-12 flex gap-16 items-center">
-    <div class="w-[60%]">
-        <div class="relative flex items-center">
-            <img src="laptop.png" class="absolute">
-            <video autoplay="autoplay" loop="loop" class="absolute w-[75%] left-[12%]">
-                <source
-                src="demo.mp4"
-                type="video/mp4"
-                />
-        </video>
-        </div>
-    </div>
-    <div class="w-[40%] gap-8 shadow-2xl h-auto bg-white h-full rounded-l-2xl flex flex-col py-12 pl-16">
-        <div class="flex items-center gap-8">
-            <button id="mybutton" type="button" class=`p-2 hover:border-sec-80 items-center rounded-full border-4 border-pri-60 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white`>1</button>
-            <div data-value = "1" id="mylist" class="font-bold text-xl">Join a shopping session</div>
-        </div>
-        <div class="flex items-center gap-8">
-            <button id="mybutton" type="button" class=`p-2 hover:border-sec-80 items-center rounded-full border-4 border-pri-60 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white`>2</button>
-            <div data-value = "2" id="mylist" class="font-bold text-xl">Shop as you do</div>
-        </div>
-        <div class="flex items-center gap-8">
-            <button id="mybutton" type="button" class=`p-2 hover:border-sec-80 items-center rounded-full border-4 border-pri-60 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white`>3</button>
-            <div data-value = "3" id="mylist" class="font-bold text-xl">Let us do the work</div>
-        </div>
-        <div class="flex items-center gap-8">
-            <button id="mybutton" type="button" class=`p-2 hover:border-sec-80 items-center rounded-full border-4 border-pri-60 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white`>4</button>
-            <div data-value = "4" id="mylist" class="font-bold text-xl">Pick up your parcel</div>
-        </div>
-    </div>
-</div>
-</div>
 
-<script>
+---
+
+<div class="flex flex-col pt-14 gap-4 lg:pb-14">
+  <div class="flex justify-end px-20 text-xl">How it works</div>
+  <div class="pl-12 flex gap-16 items-center">
+    <div class="w-[60%]">
+      <div class="flex items-center h-full relative">
+        <img src="laptop.png" class="absolute w-full" />
+        <video
+          autoplay="autoplay"
+          loop="loop"
+          style="width: calc(77%);"
+          class="absolute left-[11.5%]"
+        >
+          <source src="demo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <div
+      class="w-[40%] gap-8 shadow-2xl h-auto bg-white h-full rounded-l-2xl flex flex-col py-12 pl-16"
+    >
+      <div class="flex items-center gap-8">
+        <button
+          id="mybutton"
+          type="button"
+          class=`p-2 hover:border-sec-80 items-center rounded-full border-4 border-pri-60 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white`
+          >1</button
+        >
+        <div data-value="1" id="mylist" class="font-bold text-xl">
+          Join a shopping session
+        </div>
+      </div>
+      <div class="flex items-center gap-8">
+        <button
+          id="mybutton"
+          type="button"
+          class=`p-2 hover:border-sec-80 items-center rounded-full border-4 border-pri-60 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white`
+          >2</button
+        >
+        <div data-value="2" id="mylist" class="font-bold text-xl">
+          Shop as you do
+        </div>
+      </div>
+      <div class="flex items-center gap-8">
+        <button
+          id="mybutton"
+          type="button"
+          class=`p-2 hover:border-sec-80 items-center rounded-full border-4 border-pri-60 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white`
+          >3</button
+        >
+        <div data-value="3" id="mylist" class="font-bold text-xl">
+          Let us do the work
+        </div>
+      </div>
+      <div class="flex items-center gap-8">
+        <button
+          id="mybutton"
+          type="button"
+          class=`p-2 hover:border-sec-80 items-center rounded-full border-4 border-pri-60 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white`
+          >4</button
+        >
+        <div data-value="4" id="mylist" class="font-bold text-xl">
+          Pick up your parcel
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
     let number_ = 1;
-    let buttonCSS = "p-2 hover:border-sec-80 items-center rounded-full border-4 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white";
-    let listCSS = "font-bold text-xl"
+    let buttonCSS =
+      "p-2 hover:border-sec-80 items-center rounded-full border-4 text-xl font-bold bg-pri-80 h-12 w-12 flex justify-center text-white";
+    let listCSS = "font-bold text-xl";
 
     const buttons = document.querySelectorAll("button[id='mybutton']");
     updateButtonClasses();
     updateListClasses();
-      // Handle clicks on each button.
+    // Handle clicks on each button.
     buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-            number_ = parseInt(button.innerHTML);
-            updateButtonClasses();
-            updateListClasses();
-        });
+      button.addEventListener("click", () => {
+        number_ = parseInt(button.innerHTML);
+        updateButtonClasses();
+        updateListClasses();
+      });
     });
 
-    function updateListClasses(){
-        const lists = document.querySelectorAll("#mylist");
+    function updateListClasses() {
+      const lists = document.querySelectorAll("#mylist");
 
-        lists.forEach(list => {
-            if (list instanceof HTMLElement) {
-                if(list.dataset.value == number_.toString()){
-                list.className = listCSS + " text-black";
-                }else{
-                list.className = listCSS + " text-gray-300";
-                }
-            }
-        });
+      lists.forEach((list) => {
+        if (list instanceof HTMLElement) {
+          if (list.dataset.value == number_.toString()) {
+            list.className = listCSS + " text-black";
+          } else {
+            list.className = listCSS + " text-gray-300";
+          }
+        }
+      });
     }
 
     function updateButtonClasses() {
-        const buttons = document.querySelectorAll("button[id='mybutton']");
+      const buttons = document.querySelectorAll("button[id='mybutton']");
 
-        buttons.forEach(button => {
-            if(button.innerHTML == number_.toString()){
-            button.className = buttonCSS + " border-sec-80";
-            }else{
-            button.className = buttonCSS + " border-pri-60";
-            }
-        });
+      buttons.forEach((button) => {
+        if (button.innerHTML == number_.toString()) {
+          button.className = buttonCSS + " border-sec-80";
+        } else {
+          button.className = buttonCSS + " border-pri-60";
+        }
+      });
     }
-</script>
+  </script>
+</div>
