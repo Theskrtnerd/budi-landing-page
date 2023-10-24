@@ -3,304 +3,273 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 6013,
+      "count": 146,
       "max": [
-        3.980811595916748,
-        3.7184255123138428,
-        9.717855453491211
+        0.32745689153671265,
+        2.0,
+        0.7921088337898254
       ],
       "min": [
-        -3.5337438583374023,
-        -3.7515108585357666,
-        -0.05185624212026596
+        -1.311234712600708,
+        0.0,
+        -0.32745689153671265
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 72156,
+      "byteOffset": 1752,
       "componentType": 5126,
-      "count": 6013,
+      "count": 146,
       "max": [
-        0.9997314214706421,
-        0.999813973903656,
-        0.9986590147018433
-      ],
-      "min": [
-        -0.9994385242462158,
-        -0.9982629418373108,
-        -0.9998282194137573
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 6013,
-      "max": [
-        0.9998853206634521,
-        0.9994891881942749,
-        0.9996191263198853,
+        1.0,
+        0.9999669790267944,
         1.0
       ],
       "min": [
-        -0.9999394416809082,
-        -0.9989681839942932,
-        -0.9999903440475464,
+        -1.0,
+        -0.9999175071716309,
         -1.0
       ],
-      "type": "VEC4"
-    },
-    {
-      "bufferView": 1,
-      "componentType": 5126,
-      "count": 6013,
-      "max": [
-        0.997696578502655,
-        0.9974017143249512
-      ],
-      "min": [
-        0.002303481101989746,
-        0.002303481101989746
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 48104,
-      "componentType": 5126,
-      "count": 6013,
-      "max": [
-        0.997696578502655,
-        0.9974017143249512
-      ],
-      "min": [
-        0.002303481101989746,
-        0.002303481101989746
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 96208,
-      "componentType": 5126,
-      "count": 6013,
-      "max": [
-        0.997696578502655,
-        0.9974017143249512
-      ],
-      "min": [
-        0.002303481101989746,
-        0.002303481101989746
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 0,
-      "componentType": 5125,
-      "count": 19185,
-      "type": "SCALAR"
-    },
-    {
-      "bufferView": 2,
-      "byteOffset": 144312,
-      "componentType": 5126,
-      "count": 3951,
-      "max": [
-        1.564570426940918,
-        1.5554168224334717,
-        3.4527692794799805
-      ],
-      "min": [
-        -1.422615647315979,
-        -1.4633785486221313,
-        -0.014624521136283875
-      ],
       "type": "VEC3"
     },
     {
-      "bufferView": 2,
-      "byteOffset": 191724,
-      "componentType": 5126,
-      "count": 3951,
-      "max": [
-        0.9995584487915039,
-        0.9994792938232422,
-        0.9999383687973022
-      ],
-      "min": [
-        -0.9954938292503357,
-        -0.9989810585975647,
-        -0.9986656308174133
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "byteOffset": 96208,
-      "componentType": 5126,
-      "count": 3951,
-      "max": [
-        0.9996166825294495,
-        0.9996086955070496,
-        0.885391116142273,
-        1.0
-      ],
-      "min": [
-        -0.9992318749427795,
-        -0.9998244047164917,
-        -0.6292577385902405,
-        1.0
-      ],
-      "type": "VEC4"
-    },
-    {
       "bufferView": 1,
-      "byteOffset": 144312,
       "componentType": 5126,
-      "count": 3951,
+      "count": 146,
       "max": [
-        0.690000057220459,
-        1.0000001192092896
+        1.0,
+        1.0
       ],
       "min": [
-        0.3100000321865082,
+        0.0,
         0.0
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
-      "byteOffset": 76740,
       "componentType": 5125,
-      "count": 10536,
+      "count": 672,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3504,
+      "componentType": 5126,
+      "count": 627,
+      "max": [
+        0.9493957757949829,
+        0.9493951797485352,
+        0.9493957757949829
+      ],
+      "min": [
+        -0.9493954181671143,
+        -0.9493971467018127,
+        -0.9493960738182068
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 11028,
+      "componentType": 5126,
+      "count": 627,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1168,
+      "componentType": 5126,
+      "count": 627,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2688,
+      "componentType": 5125,
+      "count": 3072,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 18552,
+      "componentType": 5126,
+      "count": 711,
+      "max": [
+        1.6060127019882202,
+        1.6060147285461426,
+        1.6137895584106445
+      ],
+      "min": [
+        -1.606012225151062,
+        -1.6060123443603516,
+        -1.6060131788253784
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27084,
+      "componentType": 5126,
+      "count": 711,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 6184,
+      "componentType": 5126,
+      "count": 711,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 14976,
+      "componentType": 5125,
+      "count": 3348,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "Duznot (https://sketchfab.com/duz_vr)",
+      "author": "Matrix Rex (https://sketchfab.com/matrixrex)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/money-tree-546bd01a10f0496eab2e74a9720737d7",
-      "title": "Money Tree"
+      "source": "https://sketchfab.com/3d-models/cute-toon-tree-52d842280ec645d5a4cdb605952a5bf5",
+      "title": "Cute Toon Tree"
     },
-    "generator": "Sketchfab-12.68.0",
+    "generator": "Sketchfab-14.38.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 118884,
+      "byteLength": 28368,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 175920,
-      "byteOffset": 118884,
+      "byteLength": 11872,
+      "byteOffset": 28368,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 239136,
-      "byteOffset": 294804,
+      "byteLength": 35616,
+      "byteOffset": 40240,
       "byteStride": 12,
-      "name": "floatBufferViews",
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 159424,
-      "byteOffset": 533940,
-      "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
     }
   ],
   "buffers": [
     {
-      "byteLength": 693364,
+      "byteLength": 75856,
       "uri": "scene.bin"
-    }
-  ],
-  "images": [
-    {
-      "uri": "textures/Tree_baseColor.jpeg"
-    },
-    {
-      "uri": "textures/Tree_metallicRoughness.png"
-    },
-    {
-      "uri": "textures/Tree_normal.png"
-    },
-    {
-      "uri": "textures/Money_Leaves_baseColor.png"
-    },
-    {
-      "uri": "textures/Money_Leaves_normal.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "Tree",
-      "normalTexture": {
-        "index": 2
-      },
+      "name": "Trunk",
       "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicRoughnessTexture": {
-          "index": 1
-        }
+        "baseColorFactor": [
+          0.3346152297733971,
+          0.10437254183894587,
+          0.03779630045006352,
+          1.0
+        ],
+        "metallicFactor": 0.0
       }
     },
     {
-      "doubleSided": true,
-      "name": "Money_Leaves",
-      "normalTexture": {
-        "index": 4,
-        "scale": 0.07086768657933237
-      },
+      "name": "Leaf",
       "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 3
-        },
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.5544843858011491
+        "baseColorFactor": [
+          0.7667390886608695,
+          0.8741016688625401,
+          0.11089216006553887,
+          1.0
+        ]
       }
     }
   ],
   "meshes": [
     {
-      "name": "Tree_Tree_0",
+      "name": "Object_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TANGENT": 2,
-            "TEXCOORD_0": 3,
-            "TEXCOORD_1": 4,
-            "TEXCOORD_2": 5
+            "TEXCOORD_0": 2
           },
-          "indices": 6,
+          "indices": 3,
           "material": 0,
           "mode": 4
         }
       ]
     },
     {
-      "name": "Money_Money Leaves_0",
+      "name": "Object_1",
       "primitives": [
         {
           "attributes": {
-            "NORMAL": 8,
-            "POSITION": 7,
-            "TANGENT": 9,
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
             "TEXCOORD_0": 10
           },
           "indices": 11,
@@ -339,96 +308,99 @@
       "children": [
         2
       ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7
+      ],
       "matrix": [
-        0.009999999776482582,
+        1.0,
         0.0,
         0.0,
         0.0,
         0.0,
+        2.220446049250313e-16,
+        1.0,
         0.0,
-        0.009999999776482582,
         0.0,
-        0.0,
-        -0.009999999776482582,
-        0.0,
+        -1.0,
+        2.220446049250313e-16,
         0.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
-      "name": "money tree.fbx"
-    },
-    {
-      "children": [
-        3,
-        5
-      ],
-      "name": "RootNode"
+      "name": "GLTF_SceneRootNode"
     },
     {
       "children": [
         4
       ],
-      "matrix": [
-        100.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        -1.629206793918314e-05,
-        -99.99999999999868,
-        0.0,
-        0.0,
-        99.99999999999868,
-        -1.629206793918314e-05,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "name": "Tree"
+      "name": "Trunk_0"
     },
     {
       "mesh": 0,
-      "name": "Tree_Tree_0"
+      "name": "Object_4"
     },
     {
       "children": [
         6
       ],
       "matrix": [
-        324.34271240234375,
+        1.0,
         0.0,
         0.0,
         0.0,
         0.0,
-        -5.284213506037923e-05,
-        -324.3427124023395,
-        0.0,
-        0.0,
-        324.3427124023395,
-        -5.284213506037923e-05,
+        1.0,
         0.0,
         0.0,
         0.0,
         0.0,
+        1.0,
+        0.0,
+        -1.1414990425109863,
+        2.568373918533325,
+        0.622635543346405,
         1.0
       ],
-      "name": "Money"
+      "name": "Leaf2_1"
     },
     {
       "mesh": 1,
-      "name": "Money_Money Leaves_0"
-    }
-  ],
-  "samplers": [
+      "name": "Object_6"
+    },
     {
-      "magFilter": 9729,
-      "minFilter": 9987,
-      "wrapS": 10497,
-      "wrapT": 10497
+      "children": [
+        8
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        3.4089300632476807,
+        0.0,
+        1.0
+      ],
+      "name": "Leaf1_2"
+    },
+    {
+      "mesh": 2,
+      "name": "Object_8"
     }
   ],
   "scene": 0,
@@ -438,28 +410,6 @@
       "nodes": [
         0
       ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    },
-    {
-      "sampler": 0,
-      "source": 3
-    },
-    {
-      "sampler": 0,
-      "source": 4
     }
   ]
 }

@@ -1,11 +1,11 @@
 Model Information:
-* title:	Money Tree
-* source:	https://sketchfab.com/3d-models/money-tree-546bd01a10f0496eab2e74a9720737d7
-* author:	Duznot (https://sketchfab.com/duz_vr)
+* title:	Cute Toon Tree
+* source:	https://sketchfab.com/3d-models/cute-toon-tree-52d842280ec645d5a4cdb605952a5bf5
+* author:	Matrix Rex (https://sketchfab.com/matrixrex)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Money Tree" (https://sketchfab.com/3d-models/money-tree-546bd01a10f0496eab2e74a9720737d7) by Duznot (https://sketchfab.com/duz_vr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Cute Toon Tree" (https://sketchfab.com/3d-models/cute-toon-tree-52d842280ec645d5a4cdb605952a5bf5) by Matrix Rex (https://sketchfab.com/matrixrex) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

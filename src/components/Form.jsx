@@ -34,7 +34,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen" id="joinus">
       <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
@@ -61,7 +61,7 @@ function ContactForm() {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="What's your good name?"
+                placeholder="What's your name?"
                 className="w-[840px] bg-tertiary py-2 px-3 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </div>
@@ -89,7 +89,7 @@ function ContactForm() {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="Addidas/Nike/Anything Else"
+                placeholder="Adidas/Nike/Uniqlo/etc"
                 className="w-[840px] bg-tertiary py-2 px-3 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
               />
             </div>

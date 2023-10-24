@@ -10,6 +10,21 @@ const Computers = ({ isMobile }) => {
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
+      <ambientLight intensity={0.5} />
+      <directionalLight intensity={0.8} position={[5, 5, 5]} />
+      <spotLight intensity={1} position={[-20, 50, 10]} angle={0.12} penumbra={1} castShadow />
+      <pointLight intensity={1} position={[0, 10, 0]} />
+        {/* Increase ambient light intensity for overall brightness */}
+        <ambientLight intensity={0.8} />
+      
+      {/* Increase directional light intensity */}
+      <directionalLight intensity={1} position={[5, 5, 5]} />
+      
+      {/* Increase spot light intensity */}
+      <spotLight intensity={1.5} position={[-20, 50, 10]} angle={0.12} penumbra={1} castShadow />
+      
+      {/* Increase point light intensity */}
+      <pointLight intensity={1.2} position={[0, 10, 0]} />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -21,9 +36,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={7} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 1 :0.5}
-        position={isMobile ? [0, -3, -0.2] : [0, -3.25, 0]}
-        rotation={[-0.01, 0.5, -0.1]}
+        scale={isMobile ? 1.8 :0.8}
+        position={isMobile ? [2, -3, -0.2] : [4, -3.25, 0]}
+        rotation={[0, 0.1, -0.1]}
       />
     </mesh>
   );
@@ -58,7 +73,7 @@ const ComputersCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 4, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
