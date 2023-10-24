@@ -17,7 +17,7 @@ import FAQs from "../components/FAQs.astro";
     <Hero client:load />
   </div>
   <Cards />
-  <Slider client:load />
+  <Slider client:only="react" />
   <UserCount />
   <FAQs />
   <Form client:load />
