@@ -9,6 +9,7 @@ import Slider from "../components/Testimonials.jsx";
 import { testimonial } from "../assets";
 import Form from "../components/Form.jsx";
 import FAQs from "../components/FAQs.astro";
+import HowItWorks from "../components/HowItWorks.astro";
 ---
 
 <Layout title="Main page">
@@ -16,6 +17,7 @@ import FAQs from "../components/FAQs.astro";
   <div class="bg-cover bg-no-repear bg-center">
     <Hero client:load />
   </div>
+  <HowItWorks />
   <Cards />
   <Slider client:only="react" />
   <UserCount />
