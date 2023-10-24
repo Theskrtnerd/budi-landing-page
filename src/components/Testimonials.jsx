@@ -23,8 +23,8 @@ const Slider = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      <div className="text-center mb-6 text-violet-400 text-4xl font-extrabold">
-          What <span className="text-purple-800">early birds</span> say about us
+      <div className="text-center text-black text-4xl font-bold">
+          What <span className="text-pri-80">early birds</span> say about <span className="text-pri-100">us</span>
       </div>
       <div className="w-3/4 max-w-3xl bg-white rounded-lg p-4">
         <Carousel
