@@ -22,7 +22,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center" style={{ marginTop: "0px" }}>
       <div className="text-center text-black text-4xl font-bold">
           What <span className="text-pri-80">early birds</span> say about <span className="text-pri-100">us</span>
       </div>
