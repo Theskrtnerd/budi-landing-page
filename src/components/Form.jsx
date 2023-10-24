@@ -87,7 +87,7 @@ function ContactForm() {
               </div>
               <div className="mb-2">
                 <label htmlFor="message" className="flex flex-col">
-                  <span className="text-white font-medium mb-2">Who do you shop with?</span>
+                  <span className="text-white font-medium mb-2">Favourite Brands</span>
                 </label>
                 <textarea
                   rows={4}
