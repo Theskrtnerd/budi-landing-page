@@ -23,8 +23,8 @@ const Slider = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      <div className="text-center mb-6 text-violet-400 text-4xl font-extrabold">
-          What <span className="text-purple-800">early birds</span> say about us
+      <div className="text-center mb-6 text-black text-4xl font-extrabold">
+          What <span className="text-pri-100">early birds</span> say about <span className="text-pri-100">us</span>
       </div>
       <div className="w-3/4 max-w-3xl bg-white rounded-lg p-4">
         <Carousel
@@ -80,21 +80,21 @@ const Slider = () => {
           <img
             src="src/assets/tia.png" // Replace with your image source
             onClick={() => jumpToSlide(0)}
-            className={`mx-20 cursor-pointer ${
+            className={` cursor-pointer  mx-20${
               carouselIndex === 0 ? "" : "opacity-50"
             }`}
           />
           <img
-            src="src/assets/tia.png" // Replace with your image source
+            src="src/assets/nick.png" // Replace with your image source
             onClick={() => jumpToSlide(1)}
-            className={`mx-20 cursor-pointer ${
+            className={`cursor-pointer  mx-20 ${
               carouselIndex === 1 ? "" : "opacity-50"
             }`}
           />
           <img
-            src="src/assets/tia.png" // Replace with your image source
+            src="src/assets/shaw.png" // Replace with your image source
             onClick={() => jumpToSlide(2)}
-            className={`mx-20 cursor-pointer ${
+            className={`cursor-pointer  mx-20 ${
               carouselIndex === 2 ? "" : "opacity-50"
             }`}
           />

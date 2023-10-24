@@ -35,10 +35,11 @@ function ContactForm() {
 
   return (
     <div className="flex justify-center items-center h-screen">
+    
       <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="w-[900px] bg-pri-100 p-8 rounded-3xl"
+          className="w-[900px] bg-pri-80 p-8 rounded-3xl"
         >
           <p className="text-sec-100">Join the movement</p>
           <h3 className="text-white font-black md:text-[30px] sm:text-[24px] xs:text-[20px] text-[16px]">
