@@ -1,7 +1,7 @@
 # Budi Landing Page
 
 ```sh
-npm create astro@latest -- --template basics
+npm run dev
 ```
 
 ## 🧞 Commands
